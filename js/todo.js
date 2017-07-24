@@ -82,7 +82,6 @@ $btn.on('click', function(event) {
 /**
  * Удаление элемента списка по нажатию крестика
  */
-
 $list.on('click', '.close-btn', function(event) {
     event.preventDefault();
     $(this).closest('.list-item').remove();
@@ -92,7 +91,6 @@ $list.on('click', '.close-btn', function(event) {
 /**
  * Выделение чекбокса по нажатию на элемент списка
  */
-
 $list.on('click', '.list-item', function() {
     var $this = $(this);
     var $checkbox = $this.find('input[type="checkbox"]');
@@ -136,7 +134,6 @@ $list.on('click', '.list-item', function() {
 /**
  * Фильтр
  */
-
 $btnCompleted.on('click', function(event) {
     event.preventDefault();
 
@@ -199,7 +196,6 @@ $btnAll.on('click', function(event) {
 /**
  * Кнопка удаления всех законченных дел
  */
-
 $btnClear.on('click', function(event) {
     event.preventDefault();
     var $listItem = $('.list-item');
@@ -213,7 +209,6 @@ $btnClear.on('click', function(event) {
 /**
  * Кнопка выделения всех элементов списка
  */
-
 var $checkAll = $('.check-all');
 
 $checkAll.on('click', function(event) {
