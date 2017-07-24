@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO LIST</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">TO DO LIST</h1>
+        <form>
+            <input type="text" class="input" placeholder="What needs to be done?" autofocus>
+            <input type="submit" class="btn" value="add to list">
+        </form>
+        <button type="button" class="check-all"></button>
+        <ul class="list"></ul>
+
+        <div class="filter__wrapper">
+
+            <div class="counter">
+                <span class="counter__value">0</span> items left
+            </div>
+
+            <ul class="filter">
+                <li class="filter__item">
+                    <button type="button" class="filter__btn filter__btn_all filter__btn_current">All</button>
+                </li>
+                <li class="filter__item">
+                    <button type="button" class="filter__btn filter__btn_completed">Completed</button>
+                </li>
+                <li class="filter__item">
+                    <button type="button" class="filter__btn filter__btn_active">Active</button>
+                </li>
+                <li class="filter__item">
+                    <button type="button" class="filter__btn filter__btn_clear">Clear completed</button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <span class="copyright">Written by Alisa Filatova</span>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/todo.js"></script>
+</body>
+</html>
